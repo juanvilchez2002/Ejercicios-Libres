@@ -1,0 +1,73 @@
+h1{
+    color: tomato;
+}
+
+#titulo{
+    color: blue;
+}
+
+p.texto{
+    color: slateblue;
+}
+
+p.especial{
+    color: mediumspringgreen;
+}
+
+/*
+    todas las etiquetas p dentro de un div
+    estos se aplica a hijos, nieto... etc
+*/
+
+div p{
+    color: red;
+}
+
+div h2, div h3{
+    color: brown;
+}
+
+/*
+    selector universal o reseto "*"
+    cambia todas las propiedades que se especifican
+    salvo las que no han sido definidas x otros selectores
+    este caso se aplica por la ubicación del selector
+*/
+*{
+    font-size: 24px;
+    color: black;
+}
+
+.color{
+    
+    /*  
+        border: 5px solid red;
+        estilos de borde
+
+        dotted
+        dashed
+        solid
+        double
+        groove -- de aquí hacia abajo es con efecto 3d
+        ridge
+        inset
+        outset
+        none
+        hidden
+    */
+
+    border-color: blue;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2em;
+
+    /*
+        REM relativo al tamaño del elemento raiz, x defecto
+        1REM es 16px
+        EM tamaño de la fuente que se usa
+    */
+
+
+}
+
+
