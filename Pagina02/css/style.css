@@ -299,11 +299,11 @@ hr{
     }
 
     .cards-banner-one .content{
-        width: 80%;
+        width: 90%;
     }
 
     .cards-banner-two .content{
-        width: 80%;
+        width: 90%;
     }
 
     /*
@@ -313,6 +313,26 @@ hr{
 
     .nav-main ul.nav-menu.show{
         transform: translateX(-20px);
-        transform: ;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .new-cards, .footer-container{
+        grid-template-columns: 1fr ;
+    }
+
+    .new-cards img{
+        height: 270px;
+    }
+
+    .menu-btn{
+        right: 20px;
+    }
+
+    .cards-banner-one .content,
+    .cards-banner-two .content{
+        width: 100%;
+        padding: 40px 20px;
     }
 }
