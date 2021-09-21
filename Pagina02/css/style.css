@@ -14,6 +14,7 @@
     right: 35px;
     cursor: pointer;
     z-index: 2;
+    display: none;
 }
 
 /*
@@ -267,6 +268,10 @@ hr{
 
     .nav-main ul.nav-menu-right{
         margin-right: 40px;
+    }
+
+    .menu-btn{
+        display: block;
     }
     /*
         cambios del RDW
