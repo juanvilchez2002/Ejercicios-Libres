@@ -5,6 +5,18 @@
 }
 
 /*
+    Botom para el menú
+*/
+
+.menu-btn{
+    position: absolute;
+    top: 16px;
+    right: 35px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/*
     header
 */
 
@@ -84,7 +96,7 @@ hr{
     width: 100%;
     height: 550px;
     background: url('../img/showcase2.jpg') no-repeat center center/cover;
-    padding-bottom: 50px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,4 +253,61 @@ hr{
 
 .footer-container ul li{
     line-height: 2.8;
+}
+
+/*
+    impementando mediaquerys
+*/
+
+@media screen and (max-width: 780px){
+
+    /*
+        cambios en el icono de busqueda
+    */
+
+    .nav-main ul.nav-menu-right{
+        margin-right: 40px;
+    }
+    /*
+        cambios del RDW
+    */
+    .nav-main ul.nav-menu{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        opacity: .9;
+        height: 100%;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform .9s;
+    }
+
+    .nav-main ul.nav-menu li{
+        padding: 20px;
+        border-bottom: 2px solid #fff;
+    }
+
+    .new-cards, .footer-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cards-banner-one .content{
+        width: 80%;
+    }
+
+    .cards-banner-two .content{
+        width: 80%;
+    }
+
+    /*
+        creando la clase que se adicionara al menu-btn
+        a fin de que aparezca el menu
+    */
+
+    .nav-main ul.nav-menu.show{
+        transform: translateX(-20px);
+        transform: ;
+    }
 }
