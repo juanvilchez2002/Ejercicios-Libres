@@ -86,11 +86,26 @@ body{
     line-height: 50px;
 }
 
-.sidebar ul li .bx-search-alt{
+.sidebar ul li .tooltip{
     position: absolute;
-    z-index: 99;
-    color: #fff;
-    font-size: 22px;
+    height: 35px;
+    width: 122px;
+    transform: translateY(-50%);
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    left: 122px;
+    top: 0;
+    border-radius: 6px;
+    line-height: 35px;
+    text-align: center;
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.sidebar ul li .tooltip:hover{
+    top: 50%;
+    transition:  all 0.5 ease ;
 }
 
 .sidebar ul li input{
@@ -106,6 +121,14 @@ body{
     padding-left: 50px;
     font-size: 18px;
     color: #fff;
+}
+
+.sidebar ul li .bx-search-alt{
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 22px;
+
 }
 
 .sidebar ul li a{
@@ -129,3 +152,79 @@ body{
     line-height: 50px;
     text-align: center;
 }
+
+
+/*
+    footer
+*/
+
+.sidebar .profile_content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sidebar .profile_content .profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: #1d1b31;
+}
+
+.profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+}
+
+.profile .profile_details img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.profile .profile_details .name_job{
+    margin-left: 10px;
+}
+
+.profile .profile_details .name{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile .profile_details .job{
+    font-size: 12px;
+}
+
+.profile #log_out{
+    position: absolute;
+    left: 88%;
+    bottom: 5px;
+    transform: translateX(-10%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+
+/*
+    contenido del dashboard
+*/
+
+.home_content{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+.home_content .taxt{
+    font-size: 25px;
+    font-weight: 500;
+    color: #1d1b31;
+    margin: 12px;
+}
+
