@@ -1,0 +1,36 @@
+/*
+    estilo del header
+*/
+header{
+    background: url('../img/main.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 1000px;
+}
+
+@media screen and (max-width: 650px) {
+    header{
+        min-height: 500px;
+    }
+}
+
+/*
+    estilo de imagen con descripción
+*/
+
+.section{
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+}
+
+/*
+    estilo de tabs
+*/
+
+.tabs .indicator{
+    background-color: #000;
+}
+
+.tabs .tab a:hover, .tabs .tab a:focus.active {
+    background-color: transparent;
+}
